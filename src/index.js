@@ -77,7 +77,7 @@ client
     
 // }
 
-// function LearnGetData() {
+// function StoreContent() {
 //   const { loading, error, data } = useQuery(PRODUCT_NAME);
 
 //   if (loading) return <p>Loading...</p>;

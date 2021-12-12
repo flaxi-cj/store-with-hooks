@@ -1,5 +1,5 @@
 import React from 'react'
-import LearnGetData from '../LearnGetData';
+import StoreContent from '../Components/StoreContent/StoreContent';
 
 
 function Clothes(props) {
@@ -11,7 +11,7 @@ function Clothes(props) {
     // console.log("just checking how props look like: ",props.keyIndex);
     return(
         <div>
-           <LearnGetData categoryType={"clothes"} categoryTitle={"Clothes category"}/>
+           <StoreContent categoryType={"clothes"} categoryTitle={"Clothes category"}/>
         </div>
     )
 

@@ -13,8 +13,9 @@
     "react-scripts": "4.0.3",
     "redux-devtools-extension": "^2.13.9",
     "redux-logger": "^3.0.6",
-    "redux-thunk": "^2.4.1",
-    "web-vitals": "^1.1.2"
+    "web-vitals": "^1.1.2",
+    "@apollo/client": "^3.5.5",
+    "graphql": "^16.0.1"
   },
   "scripts": {
     "start": "react-scripts start",

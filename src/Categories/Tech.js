@@ -1,11 +1,11 @@
 import React from 'react'
-import LearnGetData from '../LearnGetData'
+import StoreContent from '../Components/StoreContent/StoreContent'
 
 
 function Tech() {
     return (
         <div>
-           <LearnGetData categoryType={"tech"} categoryTitle={"Tech Category"}/>
+           <StoreContent categoryType={"tech"} categoryTitle={"Tech Category"}/>
         </div>
     )
 }

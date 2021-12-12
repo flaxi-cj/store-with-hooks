@@ -1,12 +1,12 @@
 import React from 'react'
 import "./Navbar.css"
 import {  useState } from 'react'
-import CurrencyChoices from './CurrencyChoices';
+import CurrencyChoices from '../CurrencyChoice/CurrencyChoices.js';
 
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom';
-import { currentClothes, currentMen, currentKids } from './Redux/categorySelected/categoryActions';
-import SmallCart from './SmallCart';
+import { currentClothes, currentMen, currentKids } from '../../Redux/categorySelected/categoryActions';
+import SmallCart from '../SmallCart/SmallCart';
 
 
 function Navbar() {

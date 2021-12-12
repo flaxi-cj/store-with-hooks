@@ -2,7 +2,7 @@ import React from 'react'
 import "./CurrencyChoices.css"
 
 import { useDispatch } from 'react-redux';
-import {dollar, britishPound, australianDollar, japaneseYen, russianRubla} from "./Redux/currency/currencyActions";
+import {dollar, britishPound, australianDollar, japaneseYen, russianRubla} from "../../Redux/currency/currencyActions";
 
 function CurrencyChoices() {
     const dispatch = useDispatch();

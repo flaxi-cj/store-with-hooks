@@ -1,8 +1,14 @@
-import React, { useEffect, useState } from 'react'
+import React, { useState } from 'react'
 import { useDispatch } from 'react-redux';
-import { addItemToCart } from './Redux/shoppingCart/shoppingCartActions';
-import { ADD_ITEM_TO_CART } from './Redux/shoppingCart/shoppingCartTypes';
+import { addItemToCart } from '../../Redux/shoppingCart/shoppingCartActions';
+import { useSelector } from 'react-redux';
+
+
+
 function StoreItemPage(props) {
+
+    const currentCurrency = useSelector(state => state.currency.currencyType)
+    const currentCurrencySymbol = useSelector(state => state.currency.currencySymbol)
     // console.log("We are in the storeItemPage", props.data, "The category id is:", props.categoryId)
     
     // console.log("And the storeImagePage Looks like this: ", props.data.category.products.filter(data => data.id===props.categoryId)[0].gallery)
@@ -11,10 +17,7 @@ function StoreItemPage(props) {
 
     const [largeImageLink, setLargeImageLink] = useState(data[0].gallery[0])
     
-    // useEffect(() => {
-          
-    // }, [largeImageLink])
-
+ 
 
     const dispatch = useDispatch();
     
@@ -106,8 +109,8 @@ function StoreItemPage(props) {
                                         {/* Here we have the price */}
                             <p className="bolded-text">PRICE:</p>
                             <p className="bolded-text" style={{marginTop:"0.4em"}}>
-                            {data[0].prices.filter(item => item.currency ===props.currentCurrency).map(item => props.currentCurrencySymbol)} 
-                            {data[0].prices.filter(item => item.currency ===props.currentCurrency).map(item=> item.amount)}
+                            {data[0].prices.filter(item => item.currency ===currentCurrency).map(item => currentCurrencySymbol)} 
+                            {data[0].prices.filter(item => item.currency ===currentCurrency).map(item=> item.amount)}
                             </p>        
                         </div>   
 
