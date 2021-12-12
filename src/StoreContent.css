@@ -1,0 +1,182 @@
+.main-section{
+    padding: 2.5em 0em 0em 6em;
+    /* min-height: 100vh;
+    min-width: 100vw; */
+
+}
+
+.store-layout{
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: max-content;
+    /* min-height: 100vh; */
+    margin-bottom: 20px;
+}
+
+.store-layout h1{
+    width: 100%;
+    text-transform: uppercase;
+    grid-column: 1/4
+}
+
+
+.item-card{
+    width: 386px;
+    height: 444px;
+    padding: 16px;
+    margin-top: 5px;
+    position: relative;
+}
+.item-card a{
+    text-decoration: none;
+}
+.item-card:hover{
+    box-shadow: 1px 5px 13px gainsboro;
+}
+
+
+
+.store-element{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
+
+}
+
+.store-element img{
+    width: 354px;
+    height: 330px;
+    object-fit: contain;
+    
+}
+
+.store-element p{
+   font-size: 1.2em;
+   margin-block-end: 0.5em;
+   margin-block-start: 0.5em;
+   color:black;
+   align-self: flex-start;
+}
+
+.out-of-stock-layer{
+    width: 386px;
+    height: 444px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #ffffff;
+    opacity: 0.4;
+}
+
+.out-of-stock-text{
+    display: inline-block;
+    color: #8d8f9a !important;
+    font-size: 1.7em !important;
+    text-transform: uppercase;
+    font-weight: lighter;
+    width: 100%;
+    text-align: center;
+    margin-top: 150px !important;
+    font-family: monospace;
+    
+}
+
+
+.store-item-page-layout{
+    width: 68.875em;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2.5em;
+    display: grid;
+    grid-template-columns: 6.25em 40em 19.5em;
+    grid-column-gap: 7px;
+    column-gap: 7px;
+    align-items: start;
+    justify-content: center;
+    /* min-height: 100vh; */
+}
+
+.store-item-page-main-image img{
+    width: 40em;
+    height: 32em;
+    object-fit: contain;
+}
+
+.store-item-page-details__item-name{
+    font-size: 2em;
+    margin-block-start: 0em;
+    margin-block-end: 0em;
+    font-weight: 350;
+}
+
+
+.store-item-page-details__attributes__container{
+    display: grid;
+    grid-template-columns:  repeat(4, 3.75em);
+    justify-items: center;
+    gap: 1.5em
+}
+
+.item-border{
+    width: 100%;
+    text-align: center;
+    border: solid;
+    border-width: 0.12em;
+}
+
+.item-border button:hover{
+    text-decoration: none;
+    animation: none;
+    opacity: 1;
+    background-color:transparent;
+}
+
+.store-item-page-buy-button{
+    width: 100%;
+    font-size: 1.2em;
+    height: 3em;
+    color: white;
+    background: rgb(94, 206, 123);
+    margin: 1em 0 0 0;
+}
+
+.store-item-page-buy-button:hover{
+    background: rgb(94, 206, 123);
+    opacity: 0.8;
+}
+
+.store-item-page-buy-button-out-of-stock{
+    width: 100%;
+    font-size: 1.2em;
+    height: 3em;
+    color: white;
+    background:grey;
+    margin: 1em 0 0 0;
+}
+
+.store-item-page-buy-button-out-of-stock:hover{
+    background: grey;
+    opacity: 1;
+}
+
+.bolded-text{
+    font-size: 1.1em;
+    margin-bottom: 0.1em;
+    font-weight: 600;
+}
+
+.selected-option{
+    background: black;
+    color: white !important;
+}
+
+.selected-option-color{
+    border-color: red;
+    border-width: 0.5em;
+}
+
+.selected-option p{
+    color: white ;
+}
+
