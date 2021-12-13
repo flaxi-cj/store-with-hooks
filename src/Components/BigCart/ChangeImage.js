@@ -6,7 +6,6 @@ import { ReactComponent as ChangePhotoRightSvg } from "../../Svg/ChangePhotoRigh
 
 
 function ChangeImage({ item }) {
-    console.log("THE ITEM length IS:,", Object.keys(item).length)
     const PREVIOUS = "PREVIOUS";
     const NEXT = "NEXT";
     const [currentPhoto, setCurrentPhoto] = useState(0);
@@ -42,7 +41,6 @@ function ChangeImage({ item }) {
             <button className='change-photo-svg' onClick={() => changePhoto(PREVIOUS)}>
                 <ChangePhotoLeftSvg />
             </button>
-            {/* AICI AM RAMAS FA L SA FUNCTIONEZE */}
             <img className="big-cart-photo" src={item[currentPhoto]} alt="none" />
             <button className='change-photo-svg' onClick={() => changePhoto(NEXT)}>
                 <ChangePhotoRightSvg />

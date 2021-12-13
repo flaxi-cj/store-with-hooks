@@ -5,8 +5,6 @@ import { Provider } from 'react-redux'
 import store from './Redux/store'
 import StoreContent from "./Components/StoreContent/StoreContent"
 import "./App.css"
-
-
 // TODO(FP): change css
 import "./Components/StoreContent/StoreContent.css"
 import BigCart from "./Components/BigCart/BigCart"
@@ -16,10 +14,8 @@ function App() {
   return (
     <Provider store={store}>
       <Router>
-
         <div className="App">
           <Navbar />
-
           <Switch>
             <Route path="/clothes/:id?">
               <StoreContent categoryType={"clothes"} categoryTitle={"Clothes category"} />
@@ -34,7 +30,6 @@ function App() {
               <StoreContent keyIndex={"clothes"} />
             </Route>
           </Switch>
-
         </div>
       </Router>
     </Provider>

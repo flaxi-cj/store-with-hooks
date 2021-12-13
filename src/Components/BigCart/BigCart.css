@@ -80,3 +80,16 @@
     gap: 1em;
     align-items: center;
 }
+.big-cart-checkout-container{
+    display: flex;
+    justify-content: center;
+    padding-top: 3em;
+}
+.big-cart-checkout-text{
+    color: white;
+    background: #5ECE7B;
+    padding: 16px 32px 16px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+}

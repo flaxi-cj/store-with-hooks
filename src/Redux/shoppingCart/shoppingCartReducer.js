@@ -17,7 +17,7 @@ const shoppingCartReducer = (state = initialState, action) => {
                 gallery: action.params.gallery
             }]]
 
-
+// TODO(FP): complete the redux actions
         case ADD_ADDITIONAL_ITEM: return {
             ...state,
 

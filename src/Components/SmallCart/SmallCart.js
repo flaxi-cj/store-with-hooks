@@ -51,8 +51,8 @@ function SmallCart() {
                 }
                 <div className="small-cart-checkout-container">
 
-                    <Link to="/cart">VIEW BAG</Link>
-                    <button>CHECK OUT</button>
+                    <Link className='small-cart-view-bag-link' to="/cart">VIEW BAG</Link>
+                    <Link className='small-cart-check-out-link' to="/clothes" onClick={() => window.location.reload(false)}>CHECK OUT</Link>
                 </div>
 
 

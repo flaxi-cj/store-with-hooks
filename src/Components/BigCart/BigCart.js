@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import "./BigCart.css"
 import ChangeImage from './ChangeImage';
-
+import { Link } from 'react-router-dom';
 function BigCart() {
 
 
@@ -56,8 +56,8 @@ function BigCart() {
                         </div>
                     ))
                 }
-                <div className="small-cart-checkout-container">
-                    <button>CHECK OUT</button>
+                <div className='big-cart-checkout-container'>
+                    <Link className="big-cart-checkout-text" to="/cart" onClick={() => window.location.reload(false)}>CHECK OUT</Link>
                 </div>
 
 

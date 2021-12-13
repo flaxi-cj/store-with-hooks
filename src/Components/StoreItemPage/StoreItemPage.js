@@ -19,7 +19,6 @@ function StoreItemPage(props) {
         name: data[0].name,
         brand: data[0].brand,
         attributes: {
-
         },
         prices: data[0].prices,
         gallery: [
@@ -30,8 +29,6 @@ function StoreItemPage(props) {
 
     console.log("Here is the relevant data: ", relevantData)
     return (
-
-
         <div>
             <main className="main-section">
                 <div className="store-item-page-layout">
@@ -61,7 +58,6 @@ function StoreItemPage(props) {
 
                         {/* Here we keep all the attributes of a certain item */}
 
-
                         <div className="store-item-page-details__attributes">
                             {data[0].attributes.map(item => (
                                 <>
@@ -73,8 +69,6 @@ function StoreItemPage(props) {
                                                 className={(element.displayValue === relevantData.attributes[item.name]) ? "selected-option item-border" : "item-border"}
                                             >
                                                 <button value={element.displayValue} style={{ width: "-webkit-fill-available", height: "-webkit-fill-available" }}
-
-
                                                     onClick={() => setRelevantData(prevState => {
                                                         const backSender = Object.assign({}, prevState)
                                                         backSender.attributes[item.name] = element.displayValue;
@@ -89,12 +83,8 @@ function StoreItemPage(props) {
                                 </>
                             ))}
                         </div>
-
                         {/* Here we keep all the attributes of a certain item */}
-                        {/* Here we keep all the attributes of a certain item */}
-
                         <div style={{ fontWeight: "500" }}>
-
                             {/* Here we have the price */}
                             <p className="bolded-text">PRICE:</p>
                             <p className="bolded-text" style={{ marginTop: "0.4em" }}>
@@ -102,30 +92,23 @@ function StoreItemPage(props) {
                                 {data[0].prices.filter(item => item.currency === currentCurrency).map(item => item.amount)}
                             </p>
                         </div>
-
                         {/* Here is the buy button */}
                         <div>
                             {data[0].inStock ?
                                 <button className="store-item-page-buy-button" onClick={() => {
                                     console.log("CLICKED");
                                     dispatch(addItemToCart(relevantData))
-
                                 }}>
-
                                     ADD TO CART</button> :
                                 <button className="store-item-page-buy-button-out-of-stock" disabled onClick={() => console.log("CLICKED")}>OUT OF STOCK</button>}
                         </div>
 
-
                         {/* Here is the desciprtion. There were other options too, especially installing React HTML Parser from npm. this seemed enough for the curreent purpose */}
                         <div className="store-item-page-details__description" dangerouslySetInnerHTML={{ __html: data[0].description }} />
-
-
 
                     </div>
 
                 </div>
-
 
             </main>
         </div>

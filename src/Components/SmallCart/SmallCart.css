@@ -66,3 +66,31 @@
     line-height: 26px;
 
 }
+
+.small-cart-checkout-container{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2em;
+}
+
+a.small-cart-view-bag-link{
+    padding: 16px 32px 16px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    color: black;
+    text-decoration: none;
+    border: black;
+    border: solid;
+    border-width: 0.12em;
+}
+
+
+a.small-cart-check-out-link{
+    color: white;
+    background: #5ECE7B;
+    padding: 16px 32px 16px 32px;
+    font-size: 14px;
+    font-weight: 700;
+    text-decoration: none;
+
+}

@@ -43,9 +43,6 @@ function Navbar() {
                 <div className="categories">
                     <Link style={ClothesCheck} to="/clothes" onClick={() => dispatch(currentClothes())}>CLOTHES</Link>
                     <Link style={techCheck} to="/tech" onClick={() => dispatch(currentMen())}>TECH</Link>
-
-
-
                 </div>
 
                 <div className="logo-image">
