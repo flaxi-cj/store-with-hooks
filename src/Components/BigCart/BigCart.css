@@ -12,6 +12,7 @@
     font-size: 32px;
     line-height: 27px;
     font-weight: 600;
+    margin-top: 0;
 }
 
 .product-name-text-style{
@@ -28,10 +29,12 @@
 
 .big-cart-product-container{
     display: grid;
-    grid-template-columns: 70% 30%;
-    max-height: 15em;
+    grid-template-columns: 82% 18%;
     padding: 1.5em 0em 1.5em 0em;
-
+    border-top: inset;
+    max-width: 80%;
+    border-width: thin;
+    border-color: aliceblue;
 }
 
 .big-cart-product-decription-container{

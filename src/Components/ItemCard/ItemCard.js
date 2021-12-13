@@ -26,7 +26,7 @@ function ItemCard({ propsRecieved, item}) {
                         {item.brand} {item.name}
                     </p>
 
-                    <p style={{ fontWeight: "500" }}>
+                    <p style={{ fontWeight: "600" }}>
                         {item.prices.filter(item => item.currency === currentCurrency).map(item => currentCurrencySymbol)}
                         {item.prices.filter(item => item.currency === currentCurrency).map(item => item.amount)}
                     </p>

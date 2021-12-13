@@ -22,5 +22,10 @@ button{
 }
 
 .currency-text{
-    font-size: 1.5em;
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 29px;
+    align-items: center;
+    display: flex;
+
 }

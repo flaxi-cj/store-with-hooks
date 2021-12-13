@@ -1,10 +1,11 @@
 nav{
     display: flex;
     justify-content: space-between;
-    padding-right: 101px;
     padding-top: 30px;
     padding-left: 100px;
+    width:190vh;
 }
+
 a:hover{
     opacity: 0.3;
 }
@@ -21,7 +22,12 @@ button:hover{
     opacity: 0.3;
 }
 
+.shopping-cart-container{
+    display: flex;
+}
+
 
 .currency-and-checkout{
     display: flex;
+    align-items: center;
 }
