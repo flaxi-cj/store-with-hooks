@@ -2,12 +2,11 @@ import React from 'react'
 import "./Navbar.css"
 import {  useState } from 'react'
 import CurrencyChoices from '../CurrencyChoice/CurrencyChoices.js';
-
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { currentClothes, currentMen } from '../../Redux/categorySelected/categoryActions';
 import SmallCart from '../SmallCart/SmallCart';
-
+import { ReactComponent as StoreIcon  } from "../../Svg/StoreIcon.svg";
 
 function Navbar() {
 
@@ -17,10 +16,6 @@ const currentState = useSelector(state => state.category.categoryType)
 const [showCurrency, setShowCurrency] = useState(false);
 
 const [showShoppingCart, setShowShoppingCart] = useState(false);
-
-// console.log("The Currency is: ", currentCurrency)
-// console.log("Current state is: ", currentState)
-// console.log("The possible currencies are being displayed: ",showCurrency);
 
 
 const ClothesCheck = {
@@ -51,7 +46,7 @@ const techCheck = {
                 </div>
 
                 <div className="logo-image">
-                    <img src="https://www.adaptivewfs.com/wp-content/uploads/2020/07/logo-placeholder-image.png" alt="" className="nav-photo-element"/>
+                    <StoreIcon />
                 </div>
 
                 <div className= "currency-and-checkout">
