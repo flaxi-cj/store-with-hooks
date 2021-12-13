@@ -4,9 +4,9 @@ import categoryReducer from "./categorySelected/categoryReducer"
 import shoppingCartReducer from "./shoppingCart/shoppingCartReducer";
 
 const rootReducer = combineReducers({
-    currency:currencyReducer,
-    category:categoryReducer,
-    shoppingCart:shoppingCartReducer
+    currency: currencyReducer,
+    category: categoryReducer,
+    shoppingCart: shoppingCartReducer
 })
 
 export default rootReducer

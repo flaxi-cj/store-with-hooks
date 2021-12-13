@@ -4,19 +4,20 @@ const initialState = [];
 
 const shoppingCartReducer = (state = initialState, action) => {
 
-    switch(action.type) {
+    switch (action.type) {
         case ADD_ITEM_TO_CART: return [
             ...state,
             [{
-            id:action.params.id,
-            name:action.params.name,
-            brand:action.params.brand,
-            attributes:[action.params.attributes],
-            number:action.number,
-            prices:[action.params.prices],
-            gallery: action.params.gallery}]]
+                id: action.params.id,
+                name: action.params.name,
+                brand: action.params.brand,
+                attributes: [action.params.attributes],
+                number: action.number,
+                prices: [action.params.prices],
+                gallery: action.params.gallery
+            }]]
 
-        
+
         case ADD_ADDITIONAL_ITEM: return {
             ...state,
 

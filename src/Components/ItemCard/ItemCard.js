@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import { Link } from 'react-router-dom'
 
-function ItemCard({ propsRecieved, item}) {
+function ItemCard({ propsRecieved, item }) {
 
     const currentCurrency = useSelector(state => state.currency.currencyType)
     const currentCurrencySymbol = useSelector(state => state.currency.currencySymbol)

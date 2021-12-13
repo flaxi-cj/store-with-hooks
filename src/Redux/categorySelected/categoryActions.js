@@ -1,19 +1,19 @@
 import { Clothes, Tech, KIDS } from "./categoryTypes"
 
-export const currentClothes = () =>{
+export const currentClothes = () => {
     return {
         type: Clothes
     }
 }
 
-export const currentMen = () =>{
+export const currentMen = () => {
     return {
         type: Tech
     }
 }
 
 
-export const currentKids = () =>{
+export const currentKids = () => {
     return {
         type: KIDS
     }

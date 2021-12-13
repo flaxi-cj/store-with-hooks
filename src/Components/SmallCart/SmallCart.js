@@ -44,7 +44,7 @@ function SmallCart() {
                             </div>
 
                             <div className="small-cart-photo-container">
-                                <img className="small-cart-photo" src={item[0].gallery} alt="none" />
+                                <img className="small-cart-photo" src={item[0].gallery[0][0]} alt="none" />
                             </div>
                         </div>
                     ))

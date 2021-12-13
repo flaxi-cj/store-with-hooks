@@ -6,7 +6,7 @@ import {
 } from "@apollo/client";
 
 
-import {  useParams } from 'react-router-dom';
+import { useParams } from 'react-router-dom';
 import ItemCard from '../ItemCard/ItemCard';
 
 

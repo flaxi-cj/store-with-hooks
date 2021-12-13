@@ -9,7 +9,7 @@ function BigCart() {
     const itemsInCart = useSelector(state => state.shoppingCart);
     const currentCurrency = useSelector(state => state.currency.currencyType);
     const currentCurrencySymbol = useSelector(state => state.currency.currencySymbol);
- 
+
 
     return (
         <div>

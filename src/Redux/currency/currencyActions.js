@@ -1,37 +1,37 @@
-import { USD, GBP, AUD, JPY, RUB} from "./currencyTypes"
+import { USD, GBP, AUD, JPY, RUB } from "./currencyTypes"
 
-export const dollar = () =>{
+export const dollar = () => {
     return {
         type: USD,
-        symbol:'$'
+        symbol: '$'
     }
 }
 
-export const britishPound = () =>{
+export const britishPound = () => {
     return {
         type: GBP,
-        symbol:'£'
+        symbol: '£'
     }
 }
 
 
-export const australianDollar = () =>{
+export const australianDollar = () => {
     return {
         type: AUD,
-        symbol:'$'
+        symbol: '$'
     }
 }
 
-export const japaneseYen = () =>{
+export const japaneseYen = () => {
     return {
         type: JPY,
-        symbol:'¥'
+        symbol: '¥'
     }
 }
 
-export const russianRubla = () =>{
+export const russianRubla = () => {
     return {
         type: RUB,
-        symbol:'₽'
+        symbol: '₽'
     }
 }

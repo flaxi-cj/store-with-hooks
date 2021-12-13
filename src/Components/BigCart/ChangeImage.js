@@ -5,35 +5,35 @@ import { ReactComponent as ChangePhotoRightSvg } from "../../Svg/ChangePhotoRigh
 
 
 
-function ChangeImage({item}) {
-    console.log("THE ITEM length IS:,",Object.keys(item).length)
-    const PREVIOUS="PREVIOUS";
+function ChangeImage({ item }) {
+    console.log("THE ITEM length IS:,", Object.keys(item).length)
+    const PREVIOUS = "PREVIOUS";
     const NEXT = "NEXT";
-    const [currentPhoto,setCurrentPhoto] = useState(0);
+    const [currentPhoto, setCurrentPhoto] = useState(0);
     const itemLength = Object.keys(item).length;
 
-    const changePhoto = (params) =>{
-       if(itemLength === 1){
-           console.log("Has only one photo");
-       }
-
-       if(params === PREVIOUS){
-           if(currentPhoto === 0){
-               setCurrentPhoto(itemLength-1)
-           }
-           else{
-               setCurrentPhoto(currentPhoto-1)
-           }
-       }
-
-       if(params === NEXT){
-        if(currentPhoto === itemLength-1){
-            setCurrentPhoto(0)
+    const changePhoto = (params) => {
+        if (itemLength === 1) {
+            console.log("Has only one photo");
         }
-        else{
-            setCurrentPhoto(currentPhoto+1)
+
+        if (params === PREVIOUS) {
+            if (currentPhoto === 0) {
+                setCurrentPhoto(itemLength - 1)
+            }
+            else {
+                setCurrentPhoto(currentPhoto - 1)
+            }
         }
-    }
+
+        if (params === NEXT) {
+            if (currentPhoto === itemLength - 1) {
+                setCurrentPhoto(0)
+            }
+            else {
+                setCurrentPhoto(currentPhoto + 1)
+            }
+        }
 
     }
 
