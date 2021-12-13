@@ -6,11 +6,9 @@ import ChangeImage from './ChangeImage';
 function BigCart() {
 
 
-    const itemsInCart = useSelector(state => state.shoppingCart)
-    console.log("items in cart: ", itemsInCart)
-    console.log("We are looking for this: ", itemsInCart[0][0].gallery[0].length)
-
-    
+    const itemsInCart = useSelector(state => state.shoppingCart);
+    const currentCurrency = useSelector(state => state.currency.currencyType);
+    const currentCurrencySymbol = useSelector(state => state.currency.currencySymbol);
  
 
     return (
@@ -20,21 +18,32 @@ function BigCart() {
                 {
                     itemsInCart.map(item => (
                         <div className="big-cart-product-container">
-                            <div className="small-cart-product-decription-conainter">
-                                <div className="small-cart-product-description">
-                                    <p>{item[0].brand}</p>
-                                    <p>{item[0].name}</p>
+                            <div className="big-cart-product-decription-container">
+                                <div className="big-cart-product-description">
+                                    <p className='brand-text-style'>{item[0].brand}</p>
+                                    <p className='product-name-text-style'>{item[0].name}</p>
+                                    <p className="price-text-style">
+                                        {item[0].prices[0].filter(item => item.currency === currentCurrency).map(item => currentCurrencySymbol)}
+                                        {item[0].prices[0].filter(item => item.currency === currentCurrency).map(item => item.amount)}
+                                    </p>
+
+
                                     {
                                         item[0].attributes.map(element => (
                                             <>
                                                 {Object.keys(element).map(elems => (
-                                                    <p>{elems} : {item[0].attributes[0][elems]}</p>
+                                                    <div className='attribute-container'>
+                                                        <p>{elems} : </p>
+                                                        <div className='attribute-border'>
+                                                            <p>{item[0].attributes[0][elems]}</p>
+                                                        </div>
+                                                    </div>
                                                 ))}
                                             </>
                                         ))
                                     }
                                 </div>
-                                <div className="small-cart-product-number-of-items">
+                                <div className="big-cart-product-number-of-items">
                                     <button>+</button>
                                     <p>{item[0].number}</p>
                                     <button>-</button>
@@ -42,16 +51,12 @@ function BigCart() {
                             </div>
 
                             <div className="big-cart-photo-container">
-                                    <ChangeImage item={item[0].gallery[0]}/>
-
-
-
+                                <ChangeImage item={item[0].gallery[0]} />
                             </div>
                         </div>
                     ))
                 }
                 <div className="small-cart-checkout-container">
-                    <button>VIEW BAG</button>
                     <button>CHECK OUT</button>
                 </div>
 

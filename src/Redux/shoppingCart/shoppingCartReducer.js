@@ -13,6 +13,7 @@ const shoppingCartReducer = (state = initialState, action) => {
             brand:action.params.brand,
             attributes:[action.params.attributes],
             number:action.number,
+            prices:[action.params.prices],
             gallery: action.params.gallery}]]
 
         

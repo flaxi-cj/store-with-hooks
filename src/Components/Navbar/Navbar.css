@@ -1,14 +1,16 @@
 nav{
     display: flex;
     justify-content: space-between;
-    padding-right: 6em;
+    padding-right: 101px;
+    padding-top: 30px;
+    padding-left: 100px;
 }
 a:hover{
     opacity: 0.3;
 }
 .category-element{
     font-size: "1.5em";
-    padding-left : "2em";
+    padding-right : "2em";
 }
 .nav-photo-element{
     max-width: 2.5em;

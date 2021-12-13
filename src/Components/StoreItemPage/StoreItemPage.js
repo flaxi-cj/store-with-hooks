@@ -21,6 +21,7 @@ function StoreItemPage(props) {
         attributes: {
 
         },
+        prices: data[0].prices,
         gallery: [
             data[0].gallery.map(item => item)
         ]
