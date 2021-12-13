@@ -1,0 +1,15 @@
+.big-cart-photo{
+    max-width: 141px;
+    max-height: 185px;
+
+}
+
+.change-photo-svg{
+    background: black;
+}
+
+button.change-photo-svg:hover{
+    background: grey;
+    opacity: 0.9;
+    text-decoration: none;
+}

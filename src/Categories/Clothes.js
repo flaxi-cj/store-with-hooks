@@ -1,7 +1,7 @@
 import React from 'react'
 import StoreContent from '../Components/StoreContent/StoreContent';
 
-
+// TODO(FP): eliminate clothes and tech and kids
 function Clothes(props) {
 
         

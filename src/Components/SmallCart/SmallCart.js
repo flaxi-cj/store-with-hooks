@@ -1,5 +1,6 @@
 import React from 'react'
 import { useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 import "./SmallCart.css"
 
 function SmallCart() {
@@ -43,7 +44,8 @@ function SmallCart() {
             ))
         }
         <div className="small-cart-checkout-container">
-        <button>VIEW BAG</button>
+        
+        <Link to="/cart">VIEW BAG</Link>
         <button>CHECK OUT</button>
         </div>
         

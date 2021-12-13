@@ -1,0 +1,38 @@
+
+.big-cart-box{
+
+}
+
+.big-cart-product-container{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    max-height: 15em;
+    padding: 1em;
+
+}
+
+.small-cart-product-decription-conainter{
+    display: grid;
+    grid-template-columns: 80% 20%;
+}
+
+.small-cart-product-number-of-items{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.small-cart-product-number-of-items button{
+    border: solid;
+    border-width: thin;
+    font-size: 1.3em;
+    width: 1.8em;
+    height: 1.8em;
+}
+
+
+.big-cart-photo-container{
+    display: flex;
+    align-items: center;
+}
