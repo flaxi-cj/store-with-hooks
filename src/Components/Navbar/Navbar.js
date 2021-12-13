@@ -5,7 +5,7 @@ import CurrencyChoices from '../CurrencyChoice/CurrencyChoices.js';
 
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom';
-import { currentClothes, currentMen, currentKids } from '../../Redux/categorySelected/categoryActions';
+import { currentClothes, currentMen } from '../../Redux/categorySelected/categoryActions';
 import SmallCart from '../SmallCart/SmallCart';
 
 
@@ -39,21 +39,13 @@ const techCheck = {
     textUnderlineOffset: "1em"
 }
 
-const kidsCheck = {
-    color: currentState === "KIDS"? "green": "black",
-    textDecoration: currentState === "KIDS"? "underline": "none",
-    fontSize: "1.5em",
-    paddingLeft:"2em",
-    textUnderlineOffset: "1em"
-}
-
     return (
         <div>
             <nav>
                 <div className= "categories">
                 <Link style = {ClothesCheck} to="/clothes" onClick = {()=> dispatch(currentClothes())}>CLOTHES</Link>
                 <Link style = {techCheck} to="/tech" onClick = {()=> dispatch(currentMen())}>TECH</Link>
-                <Link style = {kidsCheck} to="/kids" onClick = {()=> dispatch(currentKids())}>KIDS</Link>
+               
                 
      
                 </div>
