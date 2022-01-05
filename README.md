@@ -1,4 +1,4 @@
-Pop Flaviu Store with React 
+Pop Flaviu Storefront using React and [GraphQL endpoint](https://github.com/flaxi-cj/junior-react-endpoint)
 
 # Getting Started with Create React App
 
