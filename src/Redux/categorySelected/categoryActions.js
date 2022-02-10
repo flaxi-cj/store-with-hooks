@@ -6,7 +6,7 @@ export const currentClothes = () => {
     }
 }
 
-export const currentMen = () => {
+export const currentTech = () => {
     return {
         type: TECH
     }

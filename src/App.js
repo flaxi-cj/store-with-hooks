@@ -15,17 +15,22 @@ function App() {
     <Provider store={store}>
       <Router>
         <div className="App">
+          
           <Navbar />
+
           <Switch>
             <Route path="/clothes/:id?">
               <StoreContent categoryType={"clothes"} categoryTitle={"Clothes category"} />
             </Route>
+
             <Route path="/tech/:id?">
               <StoreContent categoryType={"tech"} categoryTitle={"Tech Category"} />
             </Route>
+
             <Route path="/cart">
               <BigCart keyIndex={"cart"} />
             </Route>
+
             <Route path="/">
               <StoreContent keyIndex={"clothes"} />
             </Route>

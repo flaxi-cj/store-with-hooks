@@ -4,7 +4,7 @@ import { useState } from 'react'
 import CurrencyChoices from '../CurrencyChoice/CurrencyChoices.js';
 import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom';
-import { currentClothes, currentMen } from '../../Redux/categorySelected/categoryActions';
+import { currentClothes, currentTech } from '../../Redux/categorySelected/categoryActions';
 import SmallCart from '../SmallCart/SmallCart';
 
 import { ReactComponent as StoreIcon } from "../../Svg/StoreIcon.svg";
@@ -43,7 +43,7 @@ function Navbar() {
             <nav>
                 <div className="categories">
                     <Link style={ClothesCheck} to="/clothes" onClick={() => dispatch(currentClothes())}>CLOTHES</Link>
-                    <Link style={techCheck} to="/tech" onClick={() => dispatch(currentMen())}>TECH</Link>
+                    <Link style={techCheck} to="/tech" onClick={() => dispatch(currentTech())}>TECH</Link>
                 </div>
 
                 <div className="logo-image">
