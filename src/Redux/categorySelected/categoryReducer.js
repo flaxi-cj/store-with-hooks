@@ -1,4 +1,4 @@
-import { Clothes, Tech, KIDS } from "./categoryTypes"
+import { Clothes, Tech } from "./categoryTypes"
 
 const initialState = {
     categoryType: "Clothes"
@@ -12,10 +12,6 @@ const categoryReducer = (state = initialState, action) => {
             categoryType: action.type
         }
         case Tech: return {
-            ...state,
-            categoryType: action.type
-        }
-        case KIDS: return {
             ...state,
             categoryType: action.type
         }

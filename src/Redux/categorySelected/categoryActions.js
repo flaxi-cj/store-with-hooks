@@ -1,4 +1,4 @@
-import { Clothes, Tech, KIDS } from "./categoryTypes"
+import { Clothes, Tech} from "./categoryTypes"
 
 export const currentClothes = () => {
     return {
@@ -9,12 +9,5 @@ export const currentClothes = () => {
 export const currentMen = () => {
     return {
         type: Tech
-    }
-}
-
-
-export const currentKids = () => {
-    return {
-        type: KIDS
     }
 }
