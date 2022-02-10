@@ -23,16 +23,16 @@ function Navbar() {
 
 
     const ClothesCheck = {
-        color: currentState === "Clothes" ? "green" : "black",
-        textDecoration: currentState === "Clothes" ? "underline" : "none",
+        color: currentState === "CLOTHES" ? "green" : "black",
+        textDecoration: currentState === "CLOTHES" ? "underline" : "none",
         fontSize: "1.5em",
         paddingRight: "2em",
         textUnderlineOffset: "1em",
     }
 
     const techCheck = {
-        color: currentState === "Tech" ? "green" : "black",
-        textDecoration: currentState === "Tech" ? "underline" : "none",
+        color: currentState === "TECH" ? "green" : "black",
+        textDecoration: currentState === "TECH" ? "underline" : "none",
         fontSize: "1.5em",
         paddingRight: "2em",
         textUnderlineOffset: "1em"

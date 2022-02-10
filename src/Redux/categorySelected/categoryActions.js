@@ -1,13 +1,13 @@
-import { Clothes, Tech} from "./categoryTypes"
+import { CLOTHES, TECH} from "./categoryTypes"
 
 export const currentClothes = () => {
     return {
-        type: Clothes
+        type: CLOTHES
     }
 }
 
 export const currentMen = () => {
     return {
-        type: Tech
+        type: TECH
     }
 }

@@ -1,2 +1,2 @@
-export const Clothes = "Clothes"
-export const Tech = "Tech"
+export const CLOTHES = "CLOTHES"
+export const TECH = "TECH"

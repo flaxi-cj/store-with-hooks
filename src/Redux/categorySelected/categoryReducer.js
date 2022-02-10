@@ -1,17 +1,17 @@
-import { Clothes, Tech } from "./categoryTypes"
+import { CLOTHES, TECH } from "./categoryTypes"
 
 const initialState = {
-    categoryType: "Clothes"
+    categoryType: "CLOTHES"
 }
 
 const categoryReducer = (state = initialState, action) => {
 
     switch (action.type) {
-        case Clothes: return {
+        case CLOTHES: return {
             ...state,
             categoryType: action.type
         }
-        case Tech: return {
+        case TECH: return {
             ...state,
             categoryType: action.type
         }
