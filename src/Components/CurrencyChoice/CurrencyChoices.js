@@ -9,11 +9,11 @@ function CurrencyChoices() {
     return (
         <div className="currency-box-position">
             <ul className="currency-box">
-                <li><button onClick={() => dispatch(dollar())}>$ USD</button></li>
-                <li><button onClick={() => dispatch(britishPound())}>£ GBP</button></li>
-                <li><button onClick={() => dispatch(australianDollar())}>$ AUD</button></li>
-                <li><button onClick={() => dispatch(japaneseYen())}>¥ JPY</button></li>
-                <li><button onClick={() => dispatch(russianRubla())}>₽ RUB</button></li>
+                <li key={'usdK'}><button onClick={() => dispatch(dollar())}>$ USD</button></li>
+                <li key={'gbpK'}><button onClick={() => dispatch(britishPound())}>£ GBP</button></li>
+                <li key={'audK'}><button onClick={() => dispatch(australianDollar())}>$ AUD</button></li>
+                <li key={'jpyK'}><button onClick={() => dispatch(japaneseYen())}>¥ JPY</button></li>
+                <li key={'rubK'}><button onClick={() => dispatch(russianRubla())}>₽ RUB</button></li>
             </ul>
 
         </div>

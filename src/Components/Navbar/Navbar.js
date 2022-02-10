@@ -22,7 +22,7 @@ function Navbar() {
     const [showShoppingCart, setShowShoppingCart] = useState(false);
 
 
-    const ClothesCheck = {
+    const clothesCheck = {
         color: currentState === "CLOTHES" ? "green" : "black",
         textDecoration: currentState === "CLOTHES" ? "underline" : "none",
         fontSize: "1.5em",
@@ -42,7 +42,7 @@ function Navbar() {
         <div>
             <nav>
                 <div className="categories">
-                    <Link style={ClothesCheck} to="/clothes" onClick={() => dispatch(currentClothes())}>CLOTHES</Link>
+                    <Link style={clothesCheck} to="/clothes" onClick={() => dispatch(currentClothes())}>CLOTHES</Link>
                     <Link style={techCheck} to="/tech" onClick={() => dispatch(currentTech())}>TECH</Link>
                 </div>
 
