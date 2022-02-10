@@ -6,6 +6,7 @@ import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom';
 import { currentClothes, currentMen } from '../../Redux/categorySelected/categoryActions';
 import SmallCart from '../SmallCart/SmallCart';
+
 import { ReactComponent as StoreIcon } from "../../Svg/StoreIcon.svg";
 import { ReactComponent as CurrencyUpArrow } from "../../Svg/CurrencyUpArrow.svg";
 import { ReactComponent as CurrencyDownArrow } from "../../Svg/CurrencyDownArrow.svg";
@@ -16,8 +17,8 @@ function Navbar() {
     const dispatch = useDispatch();
     const currentCurrency = useSelector(state => state.currency.currencySymbol)
     const currentState = useSelector(state => state.category.categoryType)
-    const [showCurrency, setShowCurrency] = useState(false);
 
+    const [showCurrency, setShowCurrency] = useState(false);
     const [showShoppingCart, setShowShoppingCart] = useState(false);
 
 
