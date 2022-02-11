@@ -1,13 +1,16 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import { Link } from 'react-router-dom'
+import { addAdditionalItemToCart, removeItemFromCart } from '../../Redux/shoppingCart/shoppingCartActions'
 import "./SmallCart.css"
 
 function SmallCart() {
 
     const itemsInCart = useSelector(state => state.shoppingCart)
+    console.log(itemsInCart)
     const currentCurrency = useSelector(state => state.currency.currencyType);
     const currentCurrencySymbol = useSelector(state => state.currency.currencySymbol);
+    const dispatch = useDispatch();
 
 
     return (
@@ -37,9 +40,9 @@ function SmallCart() {
                                     }
                                 </div>
                                 <div className="small-cart-product-number-of-items">
-                                    <button>+</button>
+                                    <button onClick={() => dispatch(addAdditionalItemToCart(item[0].id))}>+</button>
                                     <p>{item[0].number}</p>
-                                    <button>-</button>
+                                    <button onClick={() => dispatch(removeItemFromCart(item[0].id))}>-</button>
                                 </div>
                             </div>
 

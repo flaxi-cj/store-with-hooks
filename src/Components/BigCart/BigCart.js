@@ -1,15 +1,16 @@
 import React from 'react'
-import { useSelector } from 'react-redux'
+import { useSelector, useDispatch } from 'react-redux'
 import "./BigCart.css"
 import ChangeImage from './ChangeImage';
 import { Link } from 'react-router-dom';
+import { addAdditionalItemToCart, removeItemFromCart } from '../../Redux/shoppingCart/shoppingCartActions';
 function BigCart() {
 
 
     const itemsInCart = useSelector(state => state.shoppingCart);
     const currentCurrency = useSelector(state => state.currency.currencyType);
     const currentCurrencySymbol = useSelector(state => state.currency.currencySymbol);
-
+    const dispatch = useDispatch();
 
     return (
         <div>
@@ -44,9 +45,9 @@ function BigCart() {
                                     }
                                 </div>
                                 <div className="big-cart-product-number-of-items">
-                                    <button>+</button>
+                                    <button onClick={() => dispatch(addAdditionalItemToCart(item[0].id))}>+</button>
                                     <p>{item[0].number}</p>
-                                    <button>-</button>
+                                    <button onClick={() => dispatch(removeItemFromCart(item[0].id))}>-</button>
                                 </div>
                             </div>
 
