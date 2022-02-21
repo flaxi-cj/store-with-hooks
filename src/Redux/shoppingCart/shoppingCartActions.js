@@ -9,11 +9,10 @@ export const addItemToCart = (params) => {
     }
 }
 
-export const addAdditionalItemToCart = (params) => {
-    console.log(params)
+export const addAdditionalItemToCart = (id) => {
     return {
         type: ADD_ADDITIONAL_ITEM,
-        id: params
+        id: id
     }
 }
 
@@ -23,10 +22,10 @@ export const changeItemProperty = (params) => {
     }
 }
 
-export const removeItemFromCart = (params) => {
+export const removeItemFromCart = (id) => {
     return {
         type: REMOVE_ITEM_FROM_CART,
-        id: params
+        id: id
     }
 }
 

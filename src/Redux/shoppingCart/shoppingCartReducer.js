@@ -5,16 +5,18 @@ const initialState = [];
 const shoppingCartReducer = (state = initialState, action) => {
 
     switch (action.type) {
-        case ADD_ITEM_TO_CART: return [
+        case ADD_ITEM_TO_CART: 
+        console.log('state is', ...state)
+        return [
             ...state,
             [{
-                id: action.params.id,
-                name: action.params.name,
-                brand: action.params.brand,
-                attributes: [action.params.attributes],
-                number: action.number,
-                prices: [action.params.prices],
-                gallery: action.params.gallery
+                "id": action.params.id,
+                "name": action.params.name,
+                "brand": action.params.brand,
+                "attributes": [action.params.attributes],
+                "number": action.number,
+                "prices": [action.params.prices],
+                "gallery": action.params.gallery
             }]]
 
         // TODO(FP): complete the redux actions
@@ -54,11 +56,11 @@ const shoppingCartReducer = (state = initialState, action) => {
                     return [element];
                 })
 
-        case CHANGE_ITEM_PROPERTY: return {
+        case CHANGE_ITEM_PROPERTY: return [
             ...state,
 
-        }
-        default: return state
+        ]
+        default: return [...state]
     }
 
 }

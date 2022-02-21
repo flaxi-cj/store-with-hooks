@@ -26,8 +26,8 @@ function StoreItemPage(props) {
         ]
     })
 
-
-    console.log("Here is the relevant data: ", relevantData)
+    console.log("Here is the relevant data: ", relevantData);
+    
     return (
         <div>
             <main className="main-section">
